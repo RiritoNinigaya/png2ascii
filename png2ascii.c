@@ -70,7 +70,7 @@ int main(int argc, const char *argv[]) {
         printf("Usage: ./png2ascii filename.png\n");
         return 1;
     }
-    unsigned width, height;
+    int width, height;
     unsigned char *output = png_to_ascii(argv[1], &width, &height);
     print_ascii_image(output, width, height);
     free(output);
